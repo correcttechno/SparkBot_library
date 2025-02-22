@@ -37,43 +37,43 @@ double SparkBot::getDistance()
 }
 
 void SparkBot::forward(){
-  analogWrite(M1A,0);
-  analogWrite(M1B,sparkSpeed);
+  digitalWrite(M1A,0);
+  digitalWrite(M1B,sparkSpeed);
 
-  analogWrite(M2A,sparkSpeed);
-  analogWrite(M2B,0);
+  digitalWrite(M2A,sparkSpeed);
+  digitalWrite(M2B,0);
 }
 
 void SparkBot::backward(){
-  analogWrite(M1A,sparkSpeed);
-  analogWrite(M1B,0);
+  digitalWrite(M1A,sparkSpeed);
+  digitalWrite(M1B,0);
 
-  analogWrite(M2A,0);
-  analogWrite(M2B,sparkSpeed);
+  digitalWrite(M2A,0);
+  digitalWrite(M2B,sparkSpeed);
 }
 
 void SparkBot::right(){
-  analogWrite(M1A,sparkSpeed);
-  analogWrite(M1B,0);
+  digitalWrite(M1A,sparkSpeed);
+  digitalWrite(M1B,0);
 
-  analogWrite(M2A,sparkSpeed);
-  analogWrite(M2B,0);
+  digitalWrite(M2A,sparkSpeed);
+  digitalWrite(M2B,0);
 }
 
 void SparkBot::left(){
-  analogWrite(M1A,0);
-  analogWrite(M1B,sparkSpeed);
+  digitalWrite(M1A,0);
+  digitalWrite(M1B,sparkSpeed);
 
-  analogWrite(M2A,0);
-  analogWrite(M2B,sparkSpeed);
+  digitalWrite(M2A,0);
+  digitalWrite(M2B,sparkSpeed);
 }
 
 void SparkBot::stop(){
-  analogWrite(M1A,0);
-  analogWrite(M1B,0);
+  digitalWrite(M1A,0);
+  digitalWrite(M1B,0);
 
-  analogWrite(M2A,0);
-  analogWrite(M2B,0);
+  digitalWrite(M2A,0);
+  digitalWrite(M2B,0);
 }
 
 void SparkBot::setSpeed(int speed){
